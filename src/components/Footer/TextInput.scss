@@ -1,0 +1,51 @@
+.container {
+    padding: 9px 12px 11px;
+    margin: 5px 10px;
+    background-color: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    border-radius: 21px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    width: inherit;
+    min-width: 0;
+    min-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    outline: none;
+    will-change: width;
+  .input-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    .placeholder {
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      z-index: 2;
+      font-size: 15px;
+      line-height: 20px;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: opacity 0.08s linear;
+    }
+    .text-input {
+      flex: 1;
+      z-index: 1;
+      min-height: 16px;
+      max-height: 100px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      font-size: 15px;
+      font-weight: 400;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      outline: none;
+      color: black;
+    }
+  }
+}
